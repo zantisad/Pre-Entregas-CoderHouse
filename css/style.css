@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+img {
+    width: 210px;
+    border-radius: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER DEL INCIIO */
+
+.header-inicio {
+    position: sticky;
+    top: 0;
+    background-color: #7a293c;
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+    width: auto;
+}
+
+.navs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px 10px;
+    width: auto;
+    min-width: 70%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    margin-top: 2px;
+    
+}
+
+.logo a {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nav1 {
+    display: flex;
+    margin: auto;
+}
+
+.nav1 ul {
+    display: flex;
+}
+
+.nav1 ul li{
+    padding: 0px 7px;
+    transition: all 0.2s;
+}
+
+.nav1 ul li a {
+    color: white;
+}
+
+.nav1 ul li:hover {
+    transform: scale(1.2);
+}
+
+.nav2 {
+    display: flex;
+    margin: auto;
+}
+
+.nav2 ul {
+    display: flex;
+}
+
+.nav2 ul li{
+    padding: 0px 7px;
+    transition: all 0.2s;
+}
+
+.nav2 ul li a {
+    color: white;
+}
+
+.nav2 ul li:hover {
+    transform: scale(1.2);
+}
+
+.nav1, .nav2 {
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER DE LOS /HTML */
+
+
+.header-htmls {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navs-htmls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px 10px;
+    width: auto;
+    min-width: 70%;
+    height: auto;
+}
+
+.logo-htmls {
+    display: flex;
+    margin-top: 2px;   
+}
+
+.logo-htmls a {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nav1-htmls {
+    display: flex;
+    margin: auto;
+}
+
+.nav1-htmls ul {
+    display: flex;
+}
+
+.nav1-htmls ul li{
+    padding: 0px 7px;
+    transition: all 0.3s;
+}
+
+.nav1-htmls ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.nav1-htmls ul li:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.nav2-htmls {
+    display: flex;
+    margin: auto;
+}
+
+.nav2-htmls ul {
+    display: flex;
+}
+
+.nav2-htmls ul li{
+    padding: 0px 7px;
+    transition: all 0.3s;
+}
+
+.nav2-htmls ul li a {
+    color: rgb(0, 0, 0);
+}
+
+.nav2-htmls ul li:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.nav1-htmls, .nav2-htmls {
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BANNER DEL INICIO */
+
+.banner {
+    min-height: 30rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    min-height: 35rem;
+    top: -100px;
+    object-fit: cover;  
+}
+
+.info-header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 15px;
+    bottom: 5rem;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.info-header h1 {
+    padding: 0px 4px;
+}
+
+
+
+
+
+
+
+
+/* GENERAL */
+
+body {
+    background-color: #842D41;
+    width: 100%;  
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-fondo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.main-inicio {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+
+
+
+
+
+
+
+/* SOBRE NOSOTROS DEL INICIO */
+
+.sobre-nosotros-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.sobre-nosotros-inicio-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nosotros-inicio p, .sobre-nosotros-inicio h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 0px;
+}
+
+.sobre-nosotros-inicio-info h2 {
+    background-color: #842D41;
+    color: white;
+    width: 90%;
+}
+
+.sobre-nosotros-inicio-info p {
+    padding: 15px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CELEBRIDADDES DEL INCIIO */
+
+.outfits-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.out-inicio-titulo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.out-inicio-titulo h2 {
+   background-color: #842D41;
+   color: white;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.out-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.out-1, .out-2, .out-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.out-1 a, .out-2 a, .out-3 a {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.out-1 p, .out-2 p, .out-3 p {
+    text-align: center;
+    padding: 15px 0px;
+    max-width: 190px;
+}
+
+.outfits-inicio img{
+    border: solid 2px rgb(0, 0, 0);
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* MARCAS DEL INICIO */
+
+.marcas-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.marcas-inicio-titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #842D41;
+    color: white;
+    width: 90%;
+    height: 45px;
+    align-items: center;
+}
+
+.marcas-inicio-titulo h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.mar-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.mar-1, .mar-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 13px 5px;
+    margin: 0px 10px 5px;
+}
+
+.mar-1 img, .mar-2 img {
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 80%;
+}
+
+.mar-1 p, .mar-2 p {
+    margin-top: 9px;
+}
+
+.mar-btn {
+    padding: 30px;
+}
+
+.out-content .out-1 a:hover {
+    transform: scale(1.03)
+}
+.out-content .out-2 a:hover {
+    transform: scale(1.03)
+}
+.out-content .out-3 a:hover {
+    transform: scale(1.03)
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER DEL INICIO */
+
+footer {
+    background-color: rgb(57, 56, 56);
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* PRIMERA SESSION DE OUTFITS */
+
+.content-total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content-total img {
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-cebs {
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 0px;
+    padding: 15px;
+    background-color: white;
+}
+
+.foto-celebridad {
+    background-image: url(../media/ozuna.jpeg);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE CELEBRIDADES */
+
+.content-cebs {
+    display: flex;
+    min-height: 360px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+}
+
+.ceb-content-img {
+    width: 460px;
+    position: relative;
+    height: 500px;
+    margin: auto   
+}
+
+.ceb-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 auto;
+    max-width: 800px;
+    width: 320px;
+    margin: 10px 30px 0px;
+    height: auto;
+}
+
+.nombre-celebridad {
+    margin: 5px 5px;
+}
+
+.info-celebridad {
+    margin: 15px 5px;
+    font-size: 20px;
+}
+
+.datos-celebridad {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px 0px 0px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.foto-celebridad {
+    border-radius: 25px;
+}
+
+.precios {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 45%;
+    max-width: 100%;
+    align-items: center;
+    margin: 10px;
+}   
+
+.precios img {
+    width: 30px;
+    height: 100%;
+}
+
+.precios h3 {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2px;
+    width: 100%;
+    justify-content: center;
+}
+
+.puntaje {
+    display: flex;
+    min-width: 30px;
+    max-width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 12px;
+    background-color: rgb(248, 156, 156);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.puntaje p {
+    font-size: 60px;
+}
+
+.puntaje h1 {
+    height: 100%;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.colores {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.colores .color-1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.colores .color-2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.colores .color-3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(0, 0, 0) solid;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.colores .color-3 .subcolor-1 {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(30, 255, 0);
+    position: absolute;
+    width: 33%;
+}
+
+.colores .color-3 .subcolor-2 {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(0, 4, 255);
+    position: absolute;
+    width: 33%;
+    left: 33%;
+}
+
+.colores .color-3 .subcolor-3 {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    width: 33%;
+    right: 0;
+}
+
+
+
+
+
+/* CAMBIOS EN EL APARTADO DE LILBABY */
+
+.colores-lilbaby {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.colores-lilbaby .color-1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 102, 150);
+    border: 1px black solid;
+    border-radius: 5px
+}
+
+.colores-lilbaby .color-2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.colores-lilbaby .color-3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(173, 194, 219);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.foto-celebridad-lilbaby {
+    background-image: url(../media/Lil\ Baby.webp);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-celebridad-rvssian {
+    background-image: url(../media/Rvssian.webp);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/* CAMBIOS EN EL APARTADO DE RVSSIAN */
+
+.colores-rvssian {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.colores-rvssian .color-1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(203, 244, 255);
+    border: 1px black solid;
+    border-radius: 5px
+}
+
+.colores-rvssian .color-2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.colores-rvssian .color-3 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(72, 149, 120);
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* APARTADO MARCAS */
+
+.marcas-main {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: auto;
+    display: flex;
+    min-height: 360px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
+.marca-cubo {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    display: flex;    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 400px;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.marca-1 .marca-logo {
+    background-image: url(../media/vans.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 150px;
+    margin: 30px;
+}
+
+.marca-2 .marca-logo {
+    background-image: url(../media/nike.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 150px;
+    margin: 30px;
+}
+
+.marca-3 .marca-logo {
+    background-image: url(../media/louis-Vuitton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 150px;
+    margin: 30px;
+}
+
+marca-1 media {
+    width: 50px;
+    height: auto;
+    position: absolute;
+}
+
+.marca-info iframe{
+    width: 100%;
+    height: 200px;
+    padding: 10px 0px 0px;
+}
+
+
+
+
+
+/* BOTONOES 'SABER MAS' DEL INICIO */
+
+.ou-btn, .mar-btn, .sn-boton{
+    transition: transform 0.1s ease-in-out;
+}
+
+.ou-btn a, .mar-btn a, .sn-boton a{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 3px 9px;
+    border-radius: 7px;
+}
+
+.ou-btn:hover, .mar-btn:hover, .sn-boton:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* APARTADO NOSOTROS */
+
+.nosotros-titulo {
+    margin: 15px 0px;
+    background-color: white;
+}
+
+.nosotros-titulo h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+}
+
+.nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    gap:5px;
+    min-height: 100vh;
+}
+
+.perfil {
+    min-width: 350px;
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-height: 900px;
+}
+
+.objetivo {
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    min-width: 370px;
+    max-height: 550px;
+    min-height: 260px ;
+}
+
+.mapa iframe {
+    
+    width: 70%;
+    height: 140px;
+    text-align: center;
+}
+
+.contenido-2 {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.descripcion {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.myinfo {
+    max-width: 300px;
+    min-width: 100px;
+    padding: 0px 10px;
+    margin: auto;
+}   
+
+.title {
+    text-align: center;
+    background-color: #842D41;
+}
+
+.title-2 {
+    color: white;
+    text-align: center;
+    background-color: #842D41;
+}
+
+.title h2 {
+    color: white;
+    padding: 6px;
+}
+
+.title-2 h2 {
+    padding: 6px;
+}
+
+.imgyo {
+    background-image: url(../media/yo.JPEG);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.myimage {
+    min-width: 140px;
+    height: 190px;
+    margin: auto;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* APARTADO CONTACTO */
+
+
+
+/* .body-contacto {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    background-color: white;
+    margin: 10px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px -3px rgb(0 0 0);
+    text-align: center;
+}
+
+.form-title {
+    font-size: 35px;
+    margin-bottom: 10px ;
+}
+
+.form-parrafo {
+    font-weight: 300;
+}
+
+.form-container {
+    margin-top: 25px;
+    display: grid;
+    gap:25px;
+}
+
+
+.form-input {
+    width: 100%;
+    background-color: none;
+    color: rgb(0, 136, 255);
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.400);
+}
+
+textarea {
+    color: rgb(0, 136, 255);
+    font-size: 15px;
+    padding: 8px;
+    outline: none;
+    height: 100px; 
+    min-height: 70px;
+    max-width: 400px; 
+    min-width: 150px; 
+    resize: vertical;
+    border: none;
+    border: 1px solid rgba(135, 133, 133, 0.44);
+    resize: none;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
+.form-submit {
+    background-color: white;
+    width: 60px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+} */
+
+.footer-contacto {
+ 
+    background-color: red;
+    position: fixed;
+    background-color: rgb(57, 56, 56);
+    
+}
+
+.form-contacto {
+    margin-top: 20px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
