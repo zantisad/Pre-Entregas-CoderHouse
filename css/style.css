@@ -1137,6 +1137,23 @@ textarea {
     justify-content: space-evenly;
 }
 
+/* Footer Marcas */
+
+.footer-marcas {
+    position: relative;
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+.body-marcas {
+    flex: 1;
+}
+
+.marcas-main {
+    position: relative;
+    min-height: 92vh;
+}
+
 
 
 
