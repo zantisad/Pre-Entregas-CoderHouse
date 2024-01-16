@@ -257,8 +257,10 @@ img {
     flex-wrap: wrap; 
 }
 
-
-
+.info-header h1 {
+    padding: 4px;
+    text-align: center;
+}
 
 
 
@@ -1153,6 +1155,8 @@ textarea {
     position: relative;
     min-height: 92vh;
 }
+
+
 
 
 
