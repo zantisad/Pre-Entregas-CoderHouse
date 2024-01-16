@@ -257,10 +257,8 @@ img {
     flex-wrap: wrap; 
 }
 
-.info-header h1 {
-    padding: 4px;
-    text-align: center;
-}
+
+
 
 
 
@@ -272,10 +270,11 @@ img {
 body {
     background-color: #842D41;
     width: 100%;  
-    height: 100vh;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
+    padding-bottom: 80px;
 }
 
 .main-fondo {
@@ -505,7 +504,7 @@ footer {
     align-items: center;
     text-align: center;   
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
@@ -1040,96 +1039,7 @@ marca-1 media {
 }
 
 
-
-
-
-
 /* APARTADO CONTACTO */
-
-
-
-/* .body-contacto {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form {
-    background-color: white;
-    margin: 10px;
-    width: 90%;
-    max-width: 500px;
-    padding: 20px 60px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px -3px rgb(0 0 0);
-    text-align: center;
-}
-
-.form-title {
-    font-size: 35px;
-    margin-bottom: 10px ;
-}
-
-.form-parrafo {
-    font-weight: 300;
-}
-
-.form-container {
-    margin-top: 25px;
-    display: grid;
-    gap:25px;
-}
-
-
-.form-input {
-    width: 100%;
-    background-color: none;
-    color: rgb(0, 136, 255);
-    font-size: 15px;
-    padding: 8px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.400);
-}
-
-textarea {
-    color: rgb(0, 136, 255);
-    font-size: 15px;
-    padding: 8px;
-    outline: none;
-    height: 100px; 
-    min-height: 70px;
-    max-width: 400px; 
-    min-width: 150px; 
-    resize: vertical;
-    border: none;
-    border: 1px solid rgba(135, 133, 133, 0.44);
-    resize: none;
-    overflow-y: hidden;
-    border-radius: 10px;
-}
-
-.form-submit {
-    background-color: white;
-    width: 60px;
-    text-align: center;
-    margin: auto;
-    cursor: pointer;
-}
-
-.form-submit:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
-} */
-
-.footer-contacto {
- 
-    background-color: red;
-    position: fixed;
-    background-color: rgb(57, 56, 56);
-    
-}
 
 .form-contacto {
     margin-top: 20px;
@@ -1138,25 +1048,6 @@ textarea {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
-/* Footer Marcas */
-
-.footer-marcas {
-    position: relative;
-    bottom: 0;
-    flex-shrink: 0;
-}
-
-.body-marcas {
-    flex: 1;
-}
-
-.marcas-main {
-    position: relative;
-    min-height: 92vh;
-}
-
-
 
 
 
