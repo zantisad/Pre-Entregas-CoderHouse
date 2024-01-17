@@ -20,16 +20,17 @@
     width: 100%;
     padding: 10px;
     gap: 5px;
-    min-height: 100vh;
   }
   
   .perfil {
+    display: flex;
+    flex-direction: column;
     min-width: 350px;
     width: 40%;
     background-color: $colorSecundario;
     border-radius: 20px;
     padding: 30px;
-    max-height: 900px;
+    height: auto;
   }
   
   .objetivo {
