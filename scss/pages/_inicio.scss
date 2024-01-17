@@ -1,0 +1,217 @@
+
+/* BANNER DEL INICIO */
+
+  .banner {
+    min-height: 30rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  
+    img {
+      height: 120%;
+      width: 100%;
+      position: absolute;
+      min-height: 35rem;
+      top: -100px;
+      object-fit: cover;
+    }
+  }
+  
+  .info-header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 15px;
+    bottom: 5rem;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+
+/* SOBRE NOSOTROS DEL INICIO */
+
+  .sobre-nosotros-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+  }
+  
+  .sobre-nosotros-inicio-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sobre-nosotros-inicio {
+    p, h2 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 5px 0px;
+    }
+  }
+  
+  .sobre-nosotros-inicio-info {
+    h2 {
+      background-color: #842D41;
+      color: white;
+      width: 90%;
+    }
+  
+    p {
+      padding: 15px 40px;
+    }
+  }
+  
+
+  /* CELEBRIDADDES DEL INCIIO */
+
+  .outfits-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .out-inicio-titulo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  
+    h2 {
+      background-color: #842D41;
+      color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .out-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  
+  .out-1, .out-2, .out-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  
+  .out-1 a, .out-2 a, .out-3 a {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .out-1 p, .out-2 p, .out-3 p {
+    text-align: center;
+    padding: 15px 0px;
+    max-width: 190px;
+  }
+  
+  .outfits-inicio img {
+    border: solid 2px rgb(0, 0, 0);
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* MARCAS DEL INICIO */
+
+  .marcas-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .marcas-inicio-titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #842D41;
+    color: white;
+    width: 90%;
+    height: 45px;
+    align-items: center;
+  
+    h2 {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .mar-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .mar-1, .mar-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    padding: 13px 5px;
+    margin: 0px 10px 5px;
+  }
+  
+  .mar-1 img, .mar-2 img {
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 80%;
+  }
+  
+  .mar-1 p, .mar-2 p {
+    margin-top: 9px;
+  }
+  
+  .mar-btn {
+    padding: 30px;
+  }
+  
+  .out-content {
+    .out-1 a:hover, .out-2 a:hover, .out-3 a:hover {
+      transform: scale(1.03);
+    }
+  }
+  
+
+  /* BOTONOES 'SABER MAS' DEL INICIO */
+
+  .ou-btn, .mar-btn, .sn-boton {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .ou-btn a, .mar-btn a, .sn-boton a {
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 3px 9px;
+    border-radius: 7px;
+  }
+  
+  .ou-btn:hover, .mar-btn:hover, .sn-boton:hover {
+    transform: scale(1.1);
+  }
+  

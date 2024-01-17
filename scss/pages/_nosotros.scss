@@ -1,0 +1,111 @@
+/* APARTADO NOSOTROS */
+
+.nosotros-titulo {
+    margin: 15px 0px;
+    background-color: white;
+  
+    h1 {
+      text-align: center;
+      padding: 15px;
+      font-size: 50px;
+    }
+  }
+  
+  .nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+    min-height: 100vh;
+  }
+  
+  .perfil {
+    min-width: 350px;
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-height: 900px;
+  }
+  
+  .objetivo {
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    min-width: 370px;
+    max-height: 550px;
+    min-height: 260px;
+  }
+  
+  .mapa iframe {
+    width: 70%;
+    height: 140px;
+    text-align: center;
+  }
+  
+  .contenido-2 {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .descripcion {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .myinfo {
+    max-width: 300px;
+    min-width: 100px;
+    padding: 0px 10px;
+    margin: auto;
+  }
+  
+  .title {
+    text-align: center;
+    background-color: #842D41;
+  }
+  
+  .title-2 {
+    color: white;
+    text-align: center;
+    background-color: #842D41;
+  }
+  
+  .title h2 {
+    color: white;
+    padding: 6px;
+  }
+  
+  .title-2 h2 {
+    padding: 6px;
+  }
+  
+  .imgyo {
+    background-image: url(../media/yo.JPEG);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .myimage {
+    min-width: 140px;
+    height: 190px;
+    margin: auto;
+  }
+  
+  .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

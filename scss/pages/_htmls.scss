@@ -1,0 +1,19 @@
+/* HEADER DE LOS /HTML */
+
+.header-htmls {
+  background-color: #ffffff;
+}
+
+
+
+.logo-htmls a {
+  color: rgb(0, 0, 0);
+  font-size: 1.8rem;
+  transition: all 0.7s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+
