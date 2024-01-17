@@ -2,7 +2,7 @@
 
 .nosotros-titulo {
     margin: 15px 0px;
-    background-color: white;
+    background-color: $colorSecundario;
   
     h1 {
       text-align: center;
@@ -26,7 +26,7 @@
   .perfil {
     min-width: 350px;
     width: 40%;
-    background-color: white;
+    background-color: $colorSecundario;
     border-radius: 20px;
     padding: 30px;
     max-height: 900px;
@@ -34,7 +34,7 @@
   
   .objetivo {
     width: 40%;
-    background-color: white;
+    background-color: $colorSecundario;
     border-radius: 20px;
     padding: 30px;
     min-width: 370px;
@@ -72,13 +72,13 @@
   
   .title {
     text-align: center;
-    background-color: #842D41;
+    background-color: $colorFondo;
   }
   
   .title-2 {
     color: white;
     text-align: center;
-    background-color: #842D41;
+    background-color: $colorFondo;
   }
   
   .title h2 {

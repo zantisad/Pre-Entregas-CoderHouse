@@ -2,7 +2,7 @@
 
 footer {
     background-color: rgb(57, 56, 56);
-    color: white;
+    color: $colorSecundario;
     display: flex;
     height: 70px;
     justify-content: center;
@@ -13,7 +13,7 @@ footer {
     bottom: 0;
   
     h3 {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: $fuenteSecundaria;
       font-size: 15px;
     }
   }

@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Fjalla One", sans-serif;
+  font-family: Fjalla One, sans-serif;
 }
 
 img {
@@ -42,7 +42,7 @@ img {
   margin-top: 2px;
 }
 .logo a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.8rem;
   transition: all 0.7s;
 }
@@ -66,7 +66,7 @@ img {
 }
 .nav1 a,
 .nav2 a {
-  color: white;
+  color: rgb(255, 255, 255);
   transition: all 0.4s;
 }
 .nav1 a:hover,
@@ -74,11 +74,15 @@ img {
   transform: scale(1.4);
   padding: 4px 7px;
   color: rgb(0, 0, 0);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
 }
 
 /* HEADER EN LOS HTMLS */
+.header-htmls {
+  background-color: rgb(255, 255, 255);
+}
+
 .nav1-htmls ul li a,
 .nav2-htmls ul li a {
   color: rgb(0, 0, 0);
@@ -89,8 +93,17 @@ img {
   transform: scale(1.4);
   padding: 4px 7px;
   color: rgb(255, 255, 255);
-  background-color: #842D41;
+  background-color: #7a293c;
   border-radius: 6px;
+}
+
+.logo-htmls a {
+  color: rgb(0, 0, 0);
+  font-size: 1.8rem;
+  transition: all 0.7s;
+}
+.logo-htmls a:hover {
+  transform: scale(1.3);
 }
 
 /* HEADER EN CONTACTO USANDO BOOTSTRAP
@@ -104,7 +117,7 @@ ul {
 /* FOOTER */
 footer {
   background-color: rgb(57, 56, 56);
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   height: 70px;
   justify-content: center;
@@ -115,13 +128,13 @@ footer {
   bottom: 0;
 }
 footer h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   font-size: 15px;
 }
 
 /* GENERAL */
 body {
-  background-color: #842D41;
+  background-color: #7a293c;
   width: 100%;
   position: relative;
   flex-direction: column;
@@ -138,7 +151,7 @@ body {
 }
 
 .main-inicio {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 90%;
   display: flex;
   justify-content: center;
@@ -146,18 +159,47 @@ body {
   align-items: center;
 }
 
-.banner h1 {
-  padding: 0px 3px;
+/* APARTADO DE CELEBRIDADES */
+.content-total {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content-total img {
+  border-radius: 2px;
+  padding: 2px;
 }
 
-/* APARTADO DE CELEBRIDADES */
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-cebs {
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px 0px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.foto-celebridad {
+  background-image: url(../media/ozuna.jpeg);
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .content-cebs {
   display: flex;
   min-height: 360px;
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 30px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 30px;
   margin: 15px;
 }
@@ -235,9 +277,10 @@ body {
   align-items: center;
   border: 1px solid black;
   padding: 12px;
-  background-color: rgb(248, 156, 156);
+  background-color: #7a293c;
   margin: 10px;
   border-radius: 10px;
+  color: rgb(255, 255, 255);
 }
 .puntaje p {
   font-size: 60px;
@@ -341,6 +384,7 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 25px;
 }
 
 /* CAMBIOS EN EL APARTADO DE RVSSIAN */
@@ -350,6 +394,7 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 25px;
 }
 
 .colores-rvssian {
@@ -391,20 +436,6 @@ body {
   justify-content: space-evenly;
 }
 
-/* HEADER DE LOS /HTML */
-.header-htmls {
-  background-color: #ffffff;
-}
-
-.logo-htmls a {
-  color: rgb(0, 0, 0);
-  font-size: 1.8rem;
-  transition: all 0.7s;
-}
-.logo-htmls a:hover {
-  transform: scale(1.3);
-}
-
 /* BANNER DEL INICIO */
 .banner {
   min-height: 30rem;
@@ -422,12 +453,15 @@ body {
   top: -100px;
   object-fit: cover;
 }
+.banner h1 {
+  padding: 0px 3px;
+}
 
 .info-header {
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 10px 15px;
   bottom: 5rem;
   margin: auto;
@@ -451,7 +485,8 @@ body {
   align-items: center;
 }
 
-.sobre-nosotros-inicio p, .sobre-nosotros-inicio h2 {
+.sobre-nosotros-inicio p,
+.sobre-nosotros-inicio h2 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -499,7 +534,9 @@ body {
   padding: 20px 0px;
 }
 
-.out-1, .out-2, .out-3 {
+.out-1,
+.out-2,
+.out-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -509,11 +546,15 @@ body {
   padding-bottom: 30px;
 }
 
-.out-1 a, .out-2 a, .out-3 a {
+.out-1 a,
+.out-2 a,
+.out-3 a {
   transition: transform 0.3s ease-in-out;
 }
 
-.out-1 p, .out-2 p, .out-3 p {
+.out-1 p,
+.out-2 p,
+.out-3 p {
   text-align: center;
   padding: 15px 0px;
   max-width: 190px;
@@ -559,7 +600,8 @@ body {
   width: 100%;
 }
 
-.mar-1, .mar-2 {
+.mar-1,
+.mar-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,14 +610,16 @@ body {
   margin: 0px 10px 5px;
 }
 
-.mar-1 img, .mar-2 img {
+.mar-1 img,
+.mar-2 img {
   display: flex;
   margin: auto;
   height: auto;
   width: 80%;
 }
 
-.mar-1 p, .mar-2 p {
+.mar-1 p,
+.mar-2 p {
   margin-top: 9px;
 }
 
@@ -583,23 +627,31 @@ body {
   padding: 30px;
 }
 
-.out-content .out-1 a:hover, .out-content .out-2 a:hover, .out-content .out-3 a:hover {
+.out-content .out-1 a:hover,
+.out-content .out-2 a:hover,
+.out-content .out-3 a:hover {
   transform: scale(1.03);
 }
 
 /* BOTONOES 'SABER MAS' DEL INICIO */
-.ou-btn, .mar-btn, .sn-boton {
+.ou-btn,
+.mar-btn,
+.sn-boton {
   transition: transform 0.1s ease-in-out;
 }
 
-.ou-btn a, .mar-btn a, .sn-boton a {
+.ou-btn a,
+.mar-btn a,
+.sn-boton a {
   color: rgb(0, 0, 0);
   border: 1px solid black;
   padding: 3px 9px;
   border-radius: 7px;
 }
 
-.ou-btn:hover, .mar-btn:hover, .sn-boton:hover {
+.ou-btn:hover,
+.mar-btn:hover,
+.sn-boton:hover {
   transform: scale(1.1);
 }
 
@@ -616,7 +668,7 @@ body {
 }
 
 .marca-cubo {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   margin: 20px 0px;
   display: flex;
@@ -675,7 +727,7 @@ marca-1 media {
 /* APARTADO NOSOTROS */
 .nosotros-titulo {
   margin: 15px 0px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .nosotros-titulo h1 {
   text-align: center;
@@ -698,7 +750,7 @@ marca-1 media {
 .perfil {
   min-width: 350px;
   width: 40%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 30px;
   max-height: 900px;
@@ -706,7 +758,7 @@ marca-1 media {
 
 .objetivo {
   width: 40%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 30px;
   min-width: 370px;
@@ -744,13 +796,13 @@ marca-1 media {
 
 .title {
   text-align: center;
-  background-color: #842D41;
+  background-color: #7a293c;
 }
 
 .title-2 {
   color: white;
   text-align: center;
-  background-color: #842D41;
+  background-color: #7a293c;
 }
 
 .title h2 {
@@ -779,40 +831,6 @@ marca-1 media {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* PRIMERA SESSION DE OUTFITS */
-.content-total {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.content-total img {
-  border-radius: 2px;
-  padding: 2px;
-}
-
-.content-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.title-cebs {
-  border: 1px black solid;
-  display: flex;
-  justify-content: center;
-  margin: 25px 0px 0px;
-  padding: 15px;
-  background-color: white;
-}
-
-.foto-celebridad {
-  background-image: url(../media/ozuna.jpeg);
-  width: auto;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

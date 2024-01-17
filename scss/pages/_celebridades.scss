@@ -1,12 +1,47 @@
 /* APARTADO DE CELEBRIDADES */
 
+
+.content-total {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  img {
+    border-radius: 2px;
+    padding: 2px;
+  }
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-cebs {
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px 0px;
+  padding: 15px;
+  background-color: $colorSecundario;
+}
+
+.foto-celebridad {
+  background-image: url(../media/ozuna.jpeg);
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .content-cebs {
     display: flex;
     min-height: 360px;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 30px;
-    background-color: white;
+    background-color: $colorSecundario;
     padding: 30px;
     margin: 15px;
   }
@@ -86,9 +121,10 @@
     align-items: center;
     border: 1px solid black;
     padding: 12px;
-    background-color: rgb(248, 156, 156);
+    background-color: $colorFondo;
     margin: 10px;
     border-radius: 10px;
+    color: $colorSecundario;
   
     p {
       font-size: 60px;
@@ -205,6 +241,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 25px;
   }
   
 
@@ -217,6 +254,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 25px;
   }
   
   .colores-rvssian {
