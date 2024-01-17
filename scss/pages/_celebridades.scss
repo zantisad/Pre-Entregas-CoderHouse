@@ -1,0 +1,254 @@
+/* APARTADO DE CELEBRIDADES */
+
+.content-cebs {
+    display: flex;
+    min-height: 360px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+  }
+  
+  .ceb-content-img {
+    width: 460px;
+    position: relative;
+    height: 500px;
+    margin: auto;
+  }
+  
+  .ceb-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 auto;
+    max-width: 800px;
+    width: 320px;
+    margin: 10px 30px 0px;
+    height: auto;
+  }
+  
+  .nombre-celebridad {
+    margin: 5px 5px;
+  }
+  
+  .info-celebridad {
+    margin: 15px 5px;
+    font-size: 20px;
+  }
+  
+  .datos-celebridad {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 15px 0px 0px;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .foto-celebridad {
+    border-radius: 25px;
+  }
+  
+  .precios {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 45%;
+    max-width: 100%;
+    align-items: center;
+    margin: 10px;
+  
+    img {
+      width: 30px;
+      height: 100%;
+    }
+  
+    h3 {
+      display: flex;
+      align-items: center;
+      border: 1px black solid;
+      border-radius: 3px;
+      padding: 3px;
+      margin: 2px;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .puntaje {
+    display: flex;
+    min-width: 30px;
+    max-width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 12px;
+    background-color: rgb(248, 156, 156);
+    margin: 10px;
+    border-radius: 10px;
+  
+    p {
+      font-size: 60px;
+    }
+  
+    h1 {
+      height: 100%;
+      font-size: 80px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .colores {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+  
+    .color-1 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-2 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-3 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      border: 1px rgb(0, 0, 0) solid;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+  
+      .subcolor-1 {
+        width: 50px;
+        height: 100%;
+        background-color: rgb(30, 255, 0);
+        position: absolute;
+        width: 33%;
+      }
+  
+      .subcolor-2 {
+        width: 50px;
+        height: 100%;
+        background-color: rgb(0, 4, 255);
+        position: absolute;
+        width: 33%;
+        left: 33%;
+      }
+  
+      .subcolor-3 {
+        width: 50px;
+        height: 100%;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        width: 33%;
+        right: 0;
+      }
+    }
+  }
+  
+
+  /* CAMBIOS EN EL APARTADO DE LILBABY */
+
+  .colores-lilbaby {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+  
+    .color-1 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 102, 150);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-2 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-3 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(173, 194, 219);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  }
+  
+  .foto-celebridad-lilbaby {
+    background-image: url(../media/Lil\ Baby.webp);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+
+  /* CAMBIOS EN EL APARTADO DE RVSSIAN */
+
+  .foto-celebridad-rvssian {
+    background-image: url(../media/Rvssian.webp);
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .colores-rvssian {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    align-items: center;
+  
+    .color-1 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(203, 244, 255);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-2 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  
+    .color-3 {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(72, 149, 120);
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+  }
+  
