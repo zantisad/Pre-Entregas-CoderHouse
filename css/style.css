@@ -160,6 +160,7 @@ body {
 }
 
 /* APARTADO DE CELEBRIDADES */
+/* GENERAL */
 .content-total {
   display: flex;
   flex-direction: column;
@@ -170,12 +171,13 @@ body {
   padding: 2px;
 }
 
-.content-1 {
+.content1 {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
+/* TITULO GENERAL "CELEBRIDADES" */
 .title-cebs {
   border: 1px black solid;
   display: flex;
@@ -185,14 +187,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.foto-celebridad {
-  background-image: url(../media/ozuna.jpeg);
-  width: auto;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
+/* GENERAL RECUADROS INDIVIDUALES DE CADA CELEBRIDAD */
 .content-cebs {
   display: flex;
   min-height: 360px;
@@ -239,10 +234,6 @@ body {
   margin: 15px 0px 0px;
   height: 100%;
   flex-wrap: wrap;
-}
-
-.foto-celebridad {
-  border-radius: 25px;
 }
 
 .precios {
@@ -292,7 +283,17 @@ body {
   align-items: center;
 }
 
-.colores {
+/* APARTADO OZUNA */
+.foto-celebridad {
+  background-image: url(../media/ozuna.jpeg);
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.colores-ozuna {
   margin: 10px 0px;
   display: flex;
   justify-content: center;
@@ -300,37 +301,37 @@ body {
   height: auto;
   align-items: center;
 }
-.colores .color-1 {
+.colores-ozuna .color-1 {
   width: 50px;
   height: 50px;
+  border: 1px black solid;
+  border-radius: 5px;
   background-color: rgb(0, 0, 0);
-  border: 1px black solid;
-  border-radius: 5px;
 }
-.colores .color-2 {
+.colores-ozuna .color-2 {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
-.colores .color-3 {
+.colores-ozuna .color-3 {
   width: 50px;
   height: 50px;
+  border: 1px black solid;
+  border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  border: 1px rgb(0, 0, 0) solid;
   position: relative;
-  border-radius: 5px;
   overflow: hidden;
 }
-.colores .color-3 .subcolor-1 {
+.colores-ozuna .color-3 .subcolor-1 {
   width: 50px;
   height: 100%;
   background-color: rgb(30, 255, 0);
   position: absolute;
   width: 33%;
 }
-.colores .color-3 .subcolor-2 {
+.colores-ozuna .color-3 .subcolor-2 {
   width: 50px;
   height: 100%;
   background-color: rgb(0, 4, 255);
@@ -338,7 +339,7 @@ body {
   width: 33%;
   left: 33%;
 }
-.colores .color-3 .subcolor-3 {
+.colores-ozuna .color-3 .subcolor-3 {
   width: 50px;
   height: 100%;
   background-color: rgb(255, 0, 0);
@@ -347,7 +348,16 @@ body {
   right: 0;
 }
 
-/* CAMBIOS EN EL APARTADO DE LILBABY */
+/* APARTADO LILBABY */
+.foto-celebridad-lilbaby {
+  background-image: url(../media/Lil\ Baby.webp);
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
 .colores-lilbaby {
   margin: 10px 0px;
   display: flex;
@@ -359,35 +369,26 @@ body {
 .colores-lilbaby .color-1 {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 102, 150);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(255, 102, 150);
 }
 .colores-lilbaby .color-2 {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 .colores-lilbaby .color-3 {
   width: 50px;
   height: 50px;
-  background-color: rgb(173, 194, 219);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(173, 194, 219);
 }
 
-.foto-celebridad-lilbaby {
-  background-image: url(../media/Lil\ Baby.webp);
-  width: auto;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 25px;
-}
-
-/* CAMBIOS EN EL APARTADO DE RVSSIAN */
+/* APARTADO RVSSIAN */
 .foto-celebridad-rvssian {
   background-image: url(../media/Rvssian.webp);
   width: auto;
@@ -408,23 +409,23 @@ body {
 .colores-rvssian .color-1 {
   width: 50px;
   height: 50px;
-  background-color: rgb(203, 244, 255);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(203, 244, 255);
 }
 .colores-rvssian .color-2 {
   width: 50px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 .colores-rvssian .color-3 {
   width: 50px;
   height: 50px;
-  background-color: rgb(72, 149, 120);
   border: 1px black solid;
   border-radius: 5px;
+  background-color: rgb(72, 149, 120);
 }
 
 /* APARTADO CONTACTO */

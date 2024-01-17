@@ -1,6 +1,8 @@
 /* APARTADO DE CELEBRIDADES */
 
 
+/* GENERAL */
+
 .content-total {
   display: flex;
   flex-direction: column;
@@ -12,11 +14,13 @@
   }
 }
 
-.content-1 {
+.content1 {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
+/* TITULO GENERAL "CELEBRIDADES" */
 
 .title-cebs {
   border: 1px black solid;
@@ -27,266 +31,222 @@
   background-color: $colorSecundario;
 }
 
-.foto-celebridad {
-  background-image: url(../media/ozuna.jpeg);
-  width: auto;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
+
+/* GENERAL RECUADROS INDIVIDUALES DE CADA CELEBRIDAD */
 
 .content-cebs {
-    display: flex;
-    min-height: 360px;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 30px;
-    background-color: $colorSecundario;
-    padding: 30px;
-    margin: 15px;
+  display: flex;
+  min-height: 360px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: $colorSecundario;
+  padding: 30px;
+  margin: 15px;
+}
+
+.ceb-content-img {
+  width: 460px;
+  position: relative;
+  height: 500px;
+  margin: auto;
+}
+
+.ceb-content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 0 auto;
+  max-width: 800px;
+  width: 320px;
+  margin: 10px 30px 0px;
+  height: auto;
+}
+
+.nombre-celebridad {
+  margin: 5px 5px;
+}
+
+.info-celebridad {
+  margin: 15px 5px;
+  font-size: 20px;
+}
+
+.datos-celebridad {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px 0px 0px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.precios {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 45%;
+  max-width: 100%;
+  align-items: center;
+  margin: 10px;
+
+  img {
+    width: 30px;
+    height: 100%;
   }
-  
-  .ceb-content-img {
-    width: 460px;
-    position: relative;
-    height: 500px;
-    margin: auto;
-  }
-  
-  .ceb-content-info {
+
+  h3 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    flex: 1 0 auto;
-    max-width: 800px;
-    width: 320px;
-    margin: 10px 30px 0px;
-    height: auto;
-  }
-  
-  .nombre-celebridad {
-    margin: 5px 5px;
-  }
-  
-  .info-celebridad {
-    margin: 15px 5px;
-    font-size: 20px;
-  }
-  
-  .datos-celebridad {
-    display: flex;
-    justify-content: space-around;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 2px;
     width: 100%;
-    margin: 15px 0px 0px;
+    justify-content: center;
+  }
+}
+
+.puntaje {
+  display: flex;
+  min-width: 30px;
+  max-width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 12px;
+  background-color: $colorFondo;
+  margin: 10px;
+  border-radius: 10px;
+  color: $colorSecundario;
+
+  p {
+    font-size: 60px;
+  }
+
+  h1 {
     height: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .foto-celebridad {
-    border-radius: 25px;
-  }
-  
-  .precios {
+    font-size: 80px;
     display: flex;
-    flex-wrap: wrap;
-    min-width: 45%;
-    max-width: 100%;
     align-items: center;
-    margin: 10px;
-  
-    img {
-      width: 30px;
+  }
+}
+
+
+
+
+/* APARTADO OZUNA */
+
+.foto-celebridad {
+  background-image: url(../media/ozuna.jpeg);
+  @include estiloImagenesEnCelebridades;
+}
+
+
+.colores-ozuna {
+  @include cuadraditosDeColoresEnCelebridades;
+
+
+  .color-1 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .color-2 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .color-3 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+
+    .subcolor-1 {
+      width: 50px;
       height: 100%;
+      background-color: rgb(30, 255, 0);
+      position: absolute;
+      width: 33%;
     }
-  
-    h3 {
-      display: flex;
-      align-items: center;
-      border: 1px black solid;
-      border-radius: 3px;
-      padding: 3px;
-      margin: 2px;
-      width: 100%;
-      justify-content: center;
-    }
-  }
-  
-  .puntaje {
-    display: flex;
-    min-width: 30px;
-    max-width: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    padding: 12px;
-    background-color: $colorFondo;
-    margin: 10px;
-    border-radius: 10px;
-    color: $colorSecundario;
-  
-    p {
-      font-size: 60px;
-    }
-  
-    h1 {
+
+    .subcolor-2 {
+      width: 50px;
       height: 100%;
-      font-size: 80px;
-      display: flex;
-      align-items: center;
+      background-color: rgb(0, 4, 255);
+      position: absolute;
+      width: 33%;
+      left: 33%;
     }
-  }
-  
-  .colores {
-    margin: 10px 0px;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: auto;
-    align-items: center;
-  
-    .color-1 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(0, 0, 0);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-2 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(255, 255, 255);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-3 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(255, 255, 255);
-      border: 1px rgb(0, 0, 0) solid;
-      position: relative;
-      border-radius: 5px;
-      overflow: hidden;
-  
-      .subcolor-1 {
-        width: 50px;
-        height: 100%;
-        background-color: rgb(30, 255, 0);
-        position: absolute;
-        width: 33%;
-      }
-  
-      .subcolor-2 {
-        width: 50px;
-        height: 100%;
-        background-color: rgb(0, 4, 255);
-        position: absolute;
-        width: 33%;
-        left: 33%;
-      }
-  
-      .subcolor-3 {
-        width: 50px;
-        height: 100%;
-        background-color: rgb(255, 0, 0);
-        position: absolute;
-        width: 33%;
-        right: 0;
-      }
-    }
-  }
-  
 
-  /* CAMBIOS EN EL APARTADO DE LILBABY */
-
-  .colores-lilbaby {
-    margin: 10px 0px;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: auto;
-    align-items: center;
-  
-    .color-1 {
+    .subcolor-3 {
       width: 50px;
-      height: 50px;
-      background-color: rgb(255, 102, 150);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-2 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(255, 255, 255);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-3 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(173, 194, 219);
-      border: 1px black solid;
-      border-radius: 5px;
+      height: 100%;
+      background-color: rgb(255, 0, 0);
+      position: absolute;
+      width: 33%;
+      right: 0;
     }
   }
-  
-  .foto-celebridad-lilbaby {
-    background-image: url(../media/Lil\ Baby.webp);
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
-  }
-  
+}
 
 
-  /* CAMBIOS EN EL APARTADO DE RVSSIAN */
+/* APARTADO LILBABY */
 
-  .foto-celebridad-rvssian {
-    background-image: url(../media/Rvssian.webp);
-    width: auto;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
+.foto-celebridad-lilbaby {
+  background-image: url(../media/Lil\ Baby.webp);
+  @include estiloImagenesEnCelebridades;
+}
+
+.colores-lilbaby {
+  @include cuadraditosDeColoresEnCelebridades;
+
+
+
+  .color-1 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(255, 102, 150);
   }
-  
-  .colores-rvssian {
-    margin: 10px 0px;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: auto;
-    align-items: center;
-  
-    .color-1 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(203, 244, 255);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-2 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(255, 255, 255);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
-  
-    .color-3 {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(72, 149, 120);
-      border: 1px black solid;
-      border-radius: 5px;
-    }
+
+  .color-2 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(255, 255, 255);
   }
-  
+
+  .color-3 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(173, 194, 219);
+  }
+}
+
+
+
+
+
+/* APARTADO RVSSIAN */
+
+.foto-celebridad-rvssian {
+  background-image: url(../media/Rvssian.webp);
+  @include estiloImagenesEnCelebridades;
+}
+
+.colores-rvssian {
+  @include cuadraditosDeColoresEnCelebridades;
+
+  .color-1 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(203, 244, 255);
+  }
+
+  .color-2 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .color-3 {
+    @include formaCuadraditosEnCelebridades;
+    background-color: rgb(72, 149, 120);
+  }
+}
