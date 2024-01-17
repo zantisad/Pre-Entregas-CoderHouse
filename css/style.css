@@ -437,6 +437,13 @@ body {
   justify-content: space-evenly;
 }
 
+.body-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
 /* BANNER DEL INICIO */
 .banner {
   min-height: 30rem;
