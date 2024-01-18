@@ -41,11 +41,23 @@
     color: $colorSecundario;
     padding: 5px 15px;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 
     span {
       display: flex;
       flex-wrap: nowrap;
+      text-align: center;
+      padding: 2px 6px;
+    }
+
+    /* Achicamos la latra del banner en pantallas chicas */
+    @media screen and (max-width: 450px) {
+      span {
+        font-size: 35px;
+      }
+      
     }
   }
 }
@@ -53,7 +65,7 @@
   /* MEIDIDAS DEL TEXTO DEL BANNER SEGUN EL TAMAÑO DE LA PANTALLA */
 
   .info-header {
-    width: clamp(400px, 60%, 1000px);
+    width: clamp(380px, 60%, 1000px);
   }
 
 

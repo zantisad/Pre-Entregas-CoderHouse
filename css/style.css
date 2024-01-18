@@ -485,16 +485,26 @@ body {
   color: rgb(255, 255, 255);
   padding: 5px 15px;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  /* Achicamos la latra del banner en pantallas chicas */
 }
 .info-header h1 span {
   display: flex;
   flex-wrap: nowrap;
+  text-align: center;
+  padding: 2px 6px;
+}
+@media screen and (max-width: 450px) {
+  .info-header h1 span {
+    font-size: 35px;
+  }
 }
 
 /* MEIDIDAS DEL TEXTO DEL BANNER SEGUN EL TAMAÑO DE LA PANTALLA */
 .info-header {
-  width: clamp(400px, 60%, 1000px);
+  width: clamp(380px, 60%, 1000px);
 }
 
 /* SOBRE NOSOTROS DEL INICIO */
