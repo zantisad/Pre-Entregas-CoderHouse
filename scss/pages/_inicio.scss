@@ -17,22 +17,80 @@
     object-fit: cover;
   }
 
-  h1 {
-    padding: 0px 3px;
-  }
-
 }
 
 .info-header {
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: $colorSecundario;
-  padding: 10px 15px;
+  gap: 15px;
+  align-items: center;
+  background-color: $colorFondo;
+  width: 750px;
+  height: 80px;
   bottom: 5rem;
   margin: auto;
-  flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.35rem;
+  box-shadow: 0px 0px 25px;
+
+  h1 {
+    padding: 0px 3px;
+    font-family: $fuentePrincipal;
+    color: $colorSecundario;
+  }
+}
+
+/* MEIDIDAS DEL TEXTO DEL BANNER SEGUN EL TAMAÑO DE LA PANTALLA */
+@media screen and (max-width: 1300px) {
+
+  .info-header {
+    width: 650px;
+    font-size: 1.3rem;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+
+  .info-header {
+    width: 550px;
+    gap: 0px;
+    height: auto;
+    font-size: 1.2rem;
+
+    h1 {
+      padding: 3.5px;
+    }
+  }
+
+}
+@media screen and (max-width: 700px) {
+
+  .info-header {
+    width: 450px;
+    gap: 0px;
+    height: auto;
+    font-size: 1.1rem;
+
+    h1 {
+      padding: 3px;
+    }
+  }
+
+}
+@media screen and (max-width: 500px) {
+
+  .info-header {
+    width: 350px;
+    gap: 0px;
+    height: auto;
+    font-size: 1rem;
+
+    h1 {
+      padding: 3px;
+    }
+  }
 }
 
 
