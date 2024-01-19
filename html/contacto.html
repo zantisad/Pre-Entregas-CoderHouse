@@ -17,51 +17,59 @@
 
     <header class="header header-htmls">
         <div class="logo logo-htmls">
-            <a class="text-decoration-none" href="../index.html">DRESS NOW</a>
+            <a href="../index.html">DRESS NOW</a>
         </div>
         <div class="navs">
+            <label class="label-hamburguesa" for="menu-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="list-icon-htmls" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </label>
+            <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+            <div class="navvar">
             <div class="nav-1 nav1-htmls">
-                <ul>
-                    <li><a class="text-decoration-none" href="../index.html"><span>INICIO</span></a></li>
-                    <li><a class="text-decoration-none" href="../html/celebridades.html"><span>CELEBRIDADES</span></a></li>
-                    <li><a class="text-decoration-none" href="../html/marcas.html"><span>MARCAS</span></a></li>
+                <ul class="ul-links">
+                    <li class="li-links"><a class="text-decoration-none" href="../index.html"><span>INICIO</span></a></li>
+                    <li class="li-links"><a class="text-decoration-none" href="../html/celebridades.html"><span>CELEBRIDADES</span></a></li>
+                    <li class="li-links"><a class="text-decoration-none" href="../html/marcas.html"><span>MARCAS</span></a></li>
                 </ul>
             </div>
             <div class="nav-2 nav2-htmls">
-                <ul>
-                    <li><a class="text-decoration-none" href="../html/nosotros.html"><span>NOSOTROS</span></a></li>
-                    <li><a class="text-decoration-none" href="../html/contacto.html"><span>CONTACTO</span></a></li>
+                <ul class="ul-links">
+                    <li class="li-links"><a class="text-decoration-none" href="../html/nosotros.html"><span>NOSOTROS</span></a></li>
+                    <li class="li-links"><a class="text-decoration-none" href="../html/contacto.html"><span>CONTACTO</span></a></li>
                 </ul>
             </div>
         </div>
+        </div>  
     </header>
 
 
 
 
 <div class="container nt-3">
-<form class="form-contacto">
+<form class="form-contacto row justify-content-center align-items-center">
 
-<div class="form-floating mb-4">
+<div class="form-floating mb-4 col-md-5">
   <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
-  <label for="floatingNombre">Nombre</label>
+  <label for="floatingNombre" class="input-centrado ">Nombre</label>
 </div>
 
-<div class="form-floating mb-4">
+<div class="form-floating mb-4 col-md-5">
   <input type="text" class="form-control" id="floatingApellido" placeholder="Apellido">
   <label for="floatingApellido">Apellido</label>
 </div>
 
-<div class="form-floating mb-4">
+<div class="form-floating mb-4 col-md-5">
     <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
     <label for="floatingEmail">Email</label>
 </div>
 
-<div class="form-floating text-center">
+<div class="form-floating text-center col-md-5">
     <textarea cols="50" rows="6" placeholder=" Mensaje..."></textarea>
 </div>
 
-<div class="col-md-4 offset-md-4 text-center mt-2">
+<div class="col-md-4 text-center mt-2">
     <button class="btn btn-success btn-lg" type="submit">Enviar</button>
 </div>
 

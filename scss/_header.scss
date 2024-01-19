@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     z-index: 1000;
     width: 100%;
+    height: 70px;
 }
 
 .navs {
@@ -35,7 +36,7 @@
         }
     }
 }
-
+@media screen and (min-width: 768px) {
 .nav-1,
 .nav-2 {
     display: flex;
@@ -68,6 +69,7 @@
 
 
 }
+}
 
 /* HEADER EN LOS HTMLS */
 
@@ -75,7 +77,7 @@
     background-color: $colorSecundario;
   }
 
-
+@media screen and (min-width: 768px) {
 .nav1-htmls,
 .nav2-htmls {
 
@@ -94,6 +96,7 @@
     }
 
 
+}
 }
 
 
@@ -115,4 +118,127 @@ automaticamente */
 ol,
 ul {
     margin-bottom: 0rem;
+}
+
+/* label_hamburguesa
+
+menu-hamburguesa
+
+list-icon */
+
+.list-icon, .menu-hamburguesa, .label-hamburguesa {
+    display: none;
+}
+
+.navvar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .list-icon, .menu-hamburguesa, .label-hamburguesa {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .navvar {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        /* height: 160px; */
+        height: 0;
+        overflow: hidden;
+        display: block;
+        justify-content:space-between;
+
+        
+        
+    }
+
+    .nav-1, .nav-2 {
+        padding: 0;
+        height: 100%;
+        display: flex;
+    }
+
+    .nav-1 {
+        height: 120%;
+    }
+
+    
+
+    .ul-links {
+        display: flex;
+        background-color: #471420;
+        width: 100%;
+        flex-wrap: nowrap;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+    }
+
+    .nav-2 .ul-links {
+        justify-content: center;
+    }
+    .nav-1 .ul-links {
+        justify-content: space-evenly;
+    }
+
+    .navs {
+        display: flex;
+        min-width: 1%;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    .label-hamburguesa {
+        right: 0;
+    }
+
+    .menu-hamburguesa:checked + .navvar {
+        height: 160px;
+        overflow: visible;
+        
+    }
+
+    .logo {
+        padding-left: 25px;
+    }
+
+    .list-icon {
+        color: white;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+    }
+
+    .li-links {
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    
+    &:hover {
+        background-color:#310e16 ;
+    }
+    }
+
+
+
+    
 }

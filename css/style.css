@@ -26,6 +26,7 @@ img {
   flex-wrap: wrap;
   z-index: 1000;
   width: 100%;
+  height: 70px;
 }
 
 .navs {
@@ -51,53 +52,55 @@ img {
   transform: scale(1.3);
 }
 
-.nav-1,
-.nav-2 {
-  display: flex;
-  margin: auto;
-  padding: 0px 15px;
+@media screen and (min-width: 768px) {
+  .nav-1,
+  .nav-2 {
+    display: flex;
+    margin: auto;
+    padding: 0px 15px;
+  }
+  .nav-1 ul,
+  .nav-2 ul {
+    display: flex;
+  }
+  .nav-1 li,
+  .nav-2 li {
+    padding: 0px 5px;
+  }
+  .nav-1 a,
+  .nav-2 a {
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+  }
+  .nav-1 a:hover,
+  .nav-2 a:hover {
+    transform: scale(1.4);
+    padding: 4px 7px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+  }
 }
-.nav-1 ul,
-.nav-2 ul {
-  display: flex;
-}
-.nav-1 li,
-.nav-2 li {
-  padding: 0px 5px;
-}
-.nav-1 a,
-.nav-2 a {
-  color: rgb(255, 255, 255);
-  transition: all 0.4s;
-}
-.nav-1 a:hover,
-.nav-2 a:hover {
-  transform: scale(1.4);
-  padding: 4px 7px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  border-radius: 6px;
-}
-
 /* HEADER EN LOS HTMLS */
 .header-htmls {
   background-color: rgb(255, 255, 255);
 }
 
-.nav1-htmls ul li a,
-.nav2-htmls ul li a {
-  color: rgb(0, 0, 0);
-  transition: all 0.4s;
+@media screen and (min-width: 768px) {
+  .nav1-htmls ul li a,
+  .nav2-htmls ul li a {
+    color: rgb(0, 0, 0);
+    transition: all 0.4s;
+  }
+  .nav1-htmls ul li a:hover,
+  .nav2-htmls ul li a:hover {
+    transform: scale(1.4);
+    padding: 4px 7px;
+    color: rgb(255, 255, 255);
+    background-color: #7a293c;
+    border-radius: 6px;
+  }
 }
-.nav1-htmls ul li a:hover,
-.nav2-htmls ul li a:hover {
-  transform: scale(1.4);
-  padding: 4px 7px;
-  color: rgb(255, 255, 255);
-  background-color: #7a293c;
-  border-radius: 6px;
-}
-
 .logo-htmls a {
   color: rgb(0, 0, 0);
   font-size: 1.8rem;
@@ -115,6 +118,102 @@ ul {
   margin-bottom: 0rem;
 }
 
+/* label_hamburguesa
+
+menu-hamburguesa
+
+list-icon */
+.list-icon, .menu-hamburguesa, .label-hamburguesa {
+  display: none;
+}
+
+.navvar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .list-icon, .menu-hamburguesa, .label-hamburguesa {
+    display: block;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .navvar {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    /* height: 160px; */
+    height: 0;
+    overflow: hidden;
+    display: block;
+    justify-content: space-between;
+  }
+  .nav-1, .nav-2 {
+    padding: 0;
+    height: 100%;
+    display: flex;
+  }
+  .nav-1 {
+    height: 120%;
+  }
+  .ul-links {
+    display: flex;
+    background-color: #471420;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+  }
+  .nav-2 .ul-links {
+    justify-content: center;
+  }
+  .nav-1 .ul-links {
+    justify-content: space-evenly;
+  }
+  .navs {
+    display: flex;
+    min-width: 1%;
+  }
+  .menu-hamburguesa {
+    display: none;
+  }
+  .label-hamburguesa {
+    right: 0;
+  }
+  .menu-hamburguesa:checked + .navvar {
+    height: 160px;
+    overflow: visible;
+  }
+  .logo {
+    padding-left: 25px;
+  }
+  .list-icon {
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  a {
+    color: white;
+  }
+  .li-links {
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+  }
+  .li-links:hover {
+    background-color: #310e16;
+  }
+}
 /* FOOTER */
 footer {
   background-color: rgb(57, 56, 56);
@@ -429,6 +528,14 @@ body {
   background-color: rgb(72, 149, 120);
 }
 
+@media screen and (max-width: 768px) {
+  .list-icon-htmls {
+    cursor: pointer;
+  }
+  a {
+    color: white;
+  }
+}
 /* APARTADO CONTACTO */
 .form-contacto {
   margin-top: 20px;
@@ -443,6 +550,10 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 40px;
+  background-image: url(../../media/efecto-lluvia-sobre-fondo-urbano.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
 /* BANNER DEL INICIO */
