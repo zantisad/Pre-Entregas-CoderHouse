@@ -453,6 +453,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .banner img {
   height: 120%;
@@ -461,6 +462,7 @@ body {
   min-height: 35rem;
   top: -100px;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .info-header {
@@ -830,7 +832,7 @@ marca-1 media {
   gap: 8px;
 }
 
-.my-info {
+.myinfo {
   max-width: 300px;
   min-width: 100px;
   padding: 0px 10px;
@@ -857,14 +859,14 @@ marca-1 media {
   padding: 6px;
 }
 
-.img-yo {
+.imgyo {
   background-image: url(../media/yo.JPEG);
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-.my-image {
+.myimage {
   min-width: 140px;
   height: 190px;
   margin: auto;

@@ -7,6 +7,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 
   img {
     height: 120%;
@@ -15,6 +16,7 @@
     min-height: 35rem;
     top: -100px;
     object-fit: cover;
+    overflow: hidden;
   }
 
 }
