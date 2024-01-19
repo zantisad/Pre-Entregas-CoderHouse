@@ -30,73 +30,77 @@
         color: $colorSecundario;
         font-size: 1.8rem;
         transition: all 0.7s;
+        text-decoration: none;
 
         &:hover {
             transform: scale(1.3);
         }
     }
 }
+
 @media screen and (min-width: 768px) {
-.nav-1,
-.nav-2 {
-    display: flex;
-    margin: auto;
-    padding: 0px 15px;
 
-    ul {
+    .nav-1,
+    .nav-2 {
         display: flex;
+        margin: auto;
+        padding: 0px 15px;
 
-    }
-
-    li {
-        padding: 0px 5px;
-
-    }
-
-    a {
-        color: $colorSecundario;
-        transition: all 0.4s;
-
-        &:hover {
-            transform: scale(1.4);
-            padding: 4px 7px;
-            color: rgb(0, 0, 0);
-            background-color: $colorSecundario;
-            border-radius: 6px;
+        ul {
+            display: flex;
 
         }
+
+        li {
+            padding: 0px 5px;
+
+        }
+
+        a {
+            color: $colorSecundario;
+            transition: all 0.4s;
+
+            &:hover {
+                transform: scale(1.4);
+                padding: 4px 7px;
+                color: rgb(0, 0, 0);
+                background-color: $colorSecundario;
+                border-radius: 6px;
+
+            }
+        }
+
+
     }
-
-
-}
 }
 
 /* HEADER EN LOS HTMLS */
 
 .header-htmls {
     background-color: $colorSecundario;
-  }
+}
 
 @media screen and (min-width: 768px) {
-.nav1-htmls,
-.nav2-htmls {
 
-    ul li a {
-        color: rgb(0, 0, 0);
-        transition: all 0.4s;
+    .nav1-htmls,
+    .nav2-htmls {
+
+        ul li a {
+            color: rgb(0, 0, 0);
+            transition: all 0.4s;
 
 
-        &:hover {
-            transform: scale(1.4);
-            padding: 4px 7px;
-            color: $colorSecundario;
-            background-color: $colorFondo;
-            border-radius: 6px;
+            &:hover {
+                transform: scale(1.4);
+                padding: 4px 7px;
+                color: $colorSecundario;
+                background-color: $colorFondo;
+                border-radius: 6px;
+            }
         }
+
+
     }
-
-
-}
 }
 
 
@@ -104,11 +108,26 @@
     color: rgb(0, 0, 0);
     font-size: 1.8rem;
     transition: all 0.7s;
-  
+
     &:hover {
-      transform: scale(1.3);
+        transform: scale(1.3);
     }
-  }
+}
+
+/* Cambios de estilos para el banner en los htmls */
+@media screen and (max-width: 768px) {
+
+    .list-icon-htmls {
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+
+    }
+
+}
+
 
 
 /* HEADER EN CONTACTO USANDO BOOTSTRAP
@@ -120,13 +139,9 @@ ul {
     margin-bottom: 0rem;
 }
 
-/* label_hamburguesa
-
-menu-hamburguesa
-
-list-icon */
-
-.list-icon, .menu-hamburguesa, .label-hamburguesa {
+.list-icon,
+.menu-hamburguesa,
+.label-hamburguesa {
     display: none;
 }
 
@@ -136,8 +151,12 @@ list-icon */
     width: 100%;
 }
 
+/* menu hamburguesa activo para cuando la pantalla sea menor a 768px */
 @media screen and (max-width: 768px) {
-    .list-icon, .menu-hamburguesa, .label-hamburguesa {
+
+    .list-icon,
+    .menu-hamburguesa,
+    .label-hamburguesa {
         display: block;
     }
 
@@ -158,13 +177,14 @@ list-icon */
         height: 0;
         overflow: hidden;
         display: block;
-        justify-content:space-between;
+        justify-content: space-between;
 
-        
-        
+
+
     }
 
-    .nav-1, .nav-2 {
+    .nav-1,
+    .nav-2 {
         padding: 0;
         height: 100%;
         display: flex;
@@ -174,7 +194,7 @@ list-icon */
         height: 120%;
     }
 
-    
+
 
     .ul-links {
         display: flex;
@@ -191,6 +211,7 @@ list-icon */
     .nav-2 .ul-links {
         justify-content: center;
     }
+
     .nav-1 .ul-links {
         justify-content: space-evenly;
     }
@@ -208,10 +229,14 @@ list-icon */
         right: 0;
     }
 
-    .menu-hamburguesa:checked + .navvar {
+
+    /* cambios en el .navvar cuando el icon este CHECKED para que se desplegue */
+    .menu-hamburguesa:checked+.navvar {
         height: 160px;
         overflow: visible;
-        
+
+        transition: all 0.3s;
+
     }
 
     .logo {
@@ -229,16 +254,16 @@ list-icon */
     }
 
     .li-links {
-    width: 100%;
-    text-align: center;
-    padding: 4px;
-    
-    &:hover {
-        background-color:#310e16 ;
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+
+        &:hover {
+            background-color: #310e16;
+        }
     }
-    }
 
 
 
-    
+
 }

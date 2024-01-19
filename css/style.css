@@ -47,6 +47,7 @@ img {
   color: rgb(255, 255, 255);
   font-size: 1.8rem;
   transition: all 0.7s;
+  text-decoration: none;
 }
 .logo a:hover {
   transform: scale(1.3);
@@ -110,6 +111,15 @@ img {
   transform: scale(1.3);
 }
 
+/* Cambios de estilos para el banner en los htmls */
+@media screen and (max-width: 768px) {
+  .list-icon-htmls {
+    cursor: pointer;
+  }
+  a {
+    color: white;
+  }
+}
 /* HEADER EN CONTACTO USANDO BOOTSTRAP
 Quitando el margen de abajo que bootstrap agrega
 automaticamente */
@@ -118,12 +128,9 @@ ul {
   margin-bottom: 0rem;
 }
 
-/* label_hamburguesa
-
-menu-hamburguesa
-
-list-icon */
-.list-icon, .menu-hamburguesa, .label-hamburguesa {
+.list-icon,
+.menu-hamburguesa,
+.label-hamburguesa {
   display: none;
 }
 
@@ -133,8 +140,11 @@ list-icon */
   width: 100%;
 }
 
+/* menu hamburguesa activo para cuando la pantalla sea menor a 768px */
 @media screen and (max-width: 768px) {
-  .list-icon, .menu-hamburguesa, .label-hamburguesa {
+  .list-icon,
+  .menu-hamburguesa,
+  .label-hamburguesa {
     display: block;
   }
   .header {
@@ -155,7 +165,8 @@ list-icon */
     display: block;
     justify-content: space-between;
   }
-  .nav-1, .nav-2 {
+  .nav-1,
+  .nav-2 {
     padding: 0;
     height: 100%;
     display: flex;
@@ -190,9 +201,11 @@ list-icon */
   .label-hamburguesa {
     right: 0;
   }
+  /* cambios en el .navvar cuando el icon este CHECKED para que se desplegue */
   .menu-hamburguesa:checked + .navvar {
     height: 160px;
     overflow: visible;
+    transition: all 0.3s;
   }
   .logo {
     padding-left: 25px;
@@ -528,14 +541,6 @@ body {
   background-color: rgb(72, 149, 120);
 }
 
-@media screen and (max-width: 768px) {
-  .list-icon-htmls {
-    cursor: pointer;
-  }
-  a {
-    color: white;
-  }
-}
 /* APARTADO CONTACTO */
 .form-contacto {
   margin-top: 20px;
