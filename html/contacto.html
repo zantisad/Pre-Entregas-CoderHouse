@@ -46,36 +46,37 @@
 
 
 
-
-<div class="container nt-3">
-<form class="form-contacto row justify-content-center align-items-center">
-
-<div class="form-floating mb-4 col-md-5">
-  <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
-  <label for="floatingNombre" class="input-centrado ">Nombre</label>
+    <form style="background-color: rgba(0, 0, 0, 0.4); padding: 20px; padding-top: 20px; top:0; border-radius: 20px;">
+        <div class="container">
+            <div class="row">
+              <div class="col-10 mx-auto">
+        <div class="m-4 mt-0 mb-0">
+          <label for="exampleInputname" class="align-items-center text-white">Nombre</label>
+          <input type="text" class="form-control" id="exampleInputname" aria-describedby="name">
+          <div id="name" class="form-text"></div>
+        </div>
+        <div class="m-4 mt-0 mb-0">
+          <label for="exampleInputapellido" class="align-items-center text-white">Apellido</label>
+          <input type="text" class="form-control" id="exampleInputapellido" aria-describedby="apellido">
+          <div id="apellido" class="form-text"></div>
+        </div>
+        <div class="m-4 mt-0 mb-0">
+          <label for="exampleInputEmail1" class="align-items-center text-white">Correo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="form-floating m-4 mt-3 mb-1">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comentarios</label>
+          </div>
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+          </div>
+        
+    </div>
 </div>
-
-<div class="form-floating mb-4 col-md-5">
-  <input type="text" class="form-control" id="floatingApellido" placeholder="Apellido">
-  <label for="floatingApellido">Apellido</label>
 </div>
-
-<div class="form-floating mb-4 col-md-5">
-    <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
-    <label for="floatingEmail">Email</label>
-</div>
-
-<div class="form-floating text-center col-md-5">
-    <textarea cols="50" rows="6" placeholder=" Mensaje..."></textarea>
-</div>
-
-<div class="col-md-4 text-center mt-2">
-    <button class="btn btn-success btn-lg" type="submit">Enviar</button>
-</div>
-
-    
-</form> 
-</div>
+      </form>
 
 
 <footer>
